@@ -10,9 +10,7 @@ aportar nuestro granito de arena para hacerte la vida más fácil.
 
 ##Descripción
 
-La página dispondra de todo tipo de utilidades para los amantes de la mecánica, o cualquier profesional que necesite
-
-ayuda o piezas.
+La página dispondra de todo tipo de utilidades para los amantes de la mecánica, o cualquier profesional que necesite ayuda o piezas.
 
 Dispondra de un foro en el que poder registrarse para poder contactar con otros interesados de la mecánica,
 
