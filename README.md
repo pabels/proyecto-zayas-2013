@@ -1,6 +1,6 @@
 #Proyecto zayas 2013 (Paint it Black!)
 
-Proyecto realizado por: Jorge González, Hector Aguado y Pablo Andrés-gayón para el curso de 2DAW del María de Zayas.
+Proyecto realizado por: Jorge González, Hector Aguado y Pablo Andrés-Gayón para el curso de 2DAW del María de Zayas.
 
 ##Motivo del proyecto
 
