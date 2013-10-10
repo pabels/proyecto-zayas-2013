@@ -1,0 +1,37 @@
+<html>
+<head><title>Paint it Black!</title>
+<link rel="stylesheet" type="text/css" href="index.css"> 
+</head>
+<body bgcolor="black">
+<div id="fondo">
+	<div id="inicio">
+		<div id="navigation">
+			<table>
+				<tr>
+					<td><a href="index.html"></a><img src="images/fondo-nav2copia.jpg" width=230px height=35px></td>
+					<td><a href="http://www.google.es"></a><img src="images/fondo-nav2copia.jpg" width=230px height=35px></td>
+					<td><a href="#"></a><img src="images/fondo-nav2copia.jpg" width=230px height=35px></td>
+					<td><a href="#"></a><img src="images/fondo-nav2copia.jpg" width=230px height=35px></td>
+				</tr>
+			</table>
+	</div>
+
+<div id="logo">
+</div>
+<div id="login">
+	<a href src="#"> Log out</a>
+</div>
+</div>
+<center>
+<div id="body">
+	<div id="productos-y-servicios1">
+	</div>
+	<div id="productos-y-servicios2">
+	</div>
+</div>
+</center>
+<div id="pie">
+</div>
+</div>
+</body>
+</html>
