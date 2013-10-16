@@ -2,12 +2,23 @@
 #inicio{
 width:63%;
 height:25%;
-background-image: url(images/fondo8edcopia.jpg); //tirar de fotoshop
+background-image: url(images/fondo8edcopia.jpg);
+background-repeat: no-repeat;
 margin-top:0px;
 margin-left:18.5%;
 background-size: 100% auto;
 }
 #nav1{
+}
+
+#contenedor{ /*Mirar mas sobre Flex Box*/
+  min-height: 800px;
+   margin: 0px;
+   padding: 0px;
+   display: -webkit-flex;
+   display:         flex;
+   -webkit-flex-flow: row;
+           flex-flow: row;
 }
 
 #logi{
@@ -32,8 +43,9 @@ height:100%;
 background-image: url(images/fondo4copia.jpg);
 margin-top:0.5%;
 margin-left:0px;
+
 }
-#productos-y-servicios1{
+#productos-y-servicios1{ /* Aqui mapa de imagenes */
 position:absolute;
 width:9%;
 height:80%;
@@ -41,7 +53,7 @@ margin-top:18.2%;
 margin-left:0%;
 color:white;
 }
-#productos-y-servicios2{
+#productos-y-servicios2{ /*Aqui publicidad*/
 position:absolute;
 width:9%;
 height:80%;
@@ -67,10 +79,11 @@ position:relative;
 top:34%;
 }
 
+
 .mi-menu  {
     border-radius: 5px;
     list-style-type: none;
-    /* la altura y su ancho dependerán de los textos */
+    /* la altura y su ancho dependerÃ¡n de los textos */
     height:55%; 
     width: 95%;
     /* el color de fondo */
@@ -110,13 +123,16 @@ top:34%;
     -ms-transition: color .2s ease-in-out;
     transition: color .2s ease-in-out;
   }
-  /* eliminamos los bordes del primer y el último */
+  /* eliminamos los bordes del primer y el Ãºltimo */
   .mi-menu li:first-child a { border-left: none; }
-  .mi-menu li:last-child a{ border-right: none; }
+  .mi-menu li:last-child a{ 
+    border-right: none;
+    text-align:left;
+   }
   /* efecto hover cambia el color */
   .mi-menu li:hover > a { color: green; }
 
-  /* los submenús */
+  /* los submenÃºs */
   .mi-menu ul {
     border-radius: 0 0 5px 5px;
     left: 0;
@@ -141,11 +157,12 @@ top:34%;
   /* son visibes al poner el cursor encima */
   .mi-menu li:hover > ul { opacity: 1; }
 
-   /* cada uno de los items de los submenús */
+   /* cada uno de los items de los submenÃºs */
   .mi-menu ul li {
     height: 0; /* no son visibles */
     overflow: hidden;
     padding: 0;
+    text-align: left;
     /* animamos su visibildiad */
     -moz-transition: height .25s ease .1s;
     -webkit-transition: height .25s ease .1s;
@@ -162,12 +179,14 @@ top:34%;
     border: none;
     border-bottom: 1px solid #111;
     margin: 0;
-    /* el ancho dependerá de los textos a utilizar */
+    /* el ancho dependerÃ¡ de los textos a utilizar */
     padding: 0px 0px;
     width: 100px;
   }
-  /* el último n otiene un borde */
-  .mi-menu ul li:last-child a { border: none; }
+  /* el Ãºltimo n otiene un borde */
+  .mi-menu ul li:last-child a {
+    border: none;
+     }
   
 .logo{
 color:green;
@@ -187,3 +206,6 @@ width:100px;
 height:100px;
 }
 
+.table a {
+color:white;
+}
