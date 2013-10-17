@@ -4,7 +4,6 @@ width:63%;
 height:25%;
 background-image: url(images/fondo8edcopia.jpg);
 background-repeat: no-repeat;
-margin-top:0px;
 margin-left:18.5%;
 background-size: 100% auto;
 }
@@ -185,18 +184,18 @@ font-family:StAndrew.tff;
 font-size: 60px;
 }
 
-.imgpie1{
-float:left;
-width:100px;
-height:100px;
+.logo-img{
+  width:30%;
+  height:30%;
+
 }
 
-.imgpie2{
-float:right;
-width:100px;
-height:100px;
-}
 
 .table a {
 color:white;
 }
+@media screen and (max-width:900px) {
+  #navigation{
+    display: none;
+   } 
+  }
