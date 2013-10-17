@@ -8,8 +8,6 @@ margin-top:0px;
 margin-left:18.5%;
 background-size: 100% auto;
 }
-#nav1{
-}
 
 #contenedor{ /*Mirar mas sobre Flex Box*/
   min-height: 800px;
@@ -19,21 +17,6 @@ background-size: 100% auto;
    display:         flex;
    -webkit-flex-flow: row;
            flex-flow: row;
-}
-
-#logi{
-width:13.5%;
-height:25%;
-float:right;
-background-image: url(images/logo4copia.png);
-background-size:100%;
-}
-#login a{
-color:blue;
-}
-#login a:hover{
-text-decoration:uppercase;
-color:blue;
 }
 
 
@@ -71,7 +54,7 @@ margin-bottom:0px;
 }
 
 #navigation{
-width:100%; 
+width:50%; 
 height:4%; 
 margin-top:0%;
 margin-left:0%;
@@ -80,6 +63,14 @@ top:34%;
 }
 
 
+#navigation-registro{
+width:50%; 
+height:4%; 
+margin-top:0%;
+margin-left:0%;
+position:relative;
+top:34%;
+}
 .mi-menu  {
     border-radius: 5px;
     list-style-type: none;
