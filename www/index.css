@@ -1,60 +1,85 @@
 
-#inicio{
-width:63%;
-height:25%;
-background-image: url(images/fondo8edcopia.jpg);
-background-repeat: no-repeat;
-margin-left:18.5%;
-background-size: 100% auto;
-}
+  body {
+   font: 24px Helvetica;
+   background: black;
+  }
 
-#contenedor{ /*Mirar mas sobre Flex Box*/
-  min-height: 800px;
+  #main {          /*Caja central*/
+   min-height: 800px;
    margin: 0px;
    padding: 0px;
+
    display: -webkit-flex;
    display:         flex;
    -webkit-flex-flow: row;
            flex-flow: row;
-}
 
+   }
+ 
+  #main > article {
+   margin: 4px;
+   padding: 5px;
+   
 
-#body{
-width:63%;
-height:100%;
-background-image: url(images/fondo4copia.jpg);
-margin-top:0.5%;
-margin-left:0px;
+   
+   
+  
+      -webkit-flex: 3 1 40%;
+           flex: 3 1 40%;
+   -webkit-order: 2;
+           order: 2;
+   }
+  
+  #main > nav {
+   margin: 4px;
+   padding: 5px;
+  
+   background:black;
+   -webkit-flex: 1 6 5%;
+           flex: 1 6 5%;
+   -webkit-order: 1;
+           order: 1;
+   }
+  
+  #main > aside {
+   margin: 4px;
+   padding: 5px;
+   
+   background: black;
+   -webkit-flex: 1 6 5%;
+           flex: 1 6 5%;
+   -webkit-order: 3;
+           order: 3;
+   }
+ 
+  header {        /*cajas de la cabecera*/
+   display: block;
+   margin: 4px;
+   padding: 5px;
+   border-radius: 15px 15px 15px 15px;
+   min-height: 150px;
+   background-image: url("images/fondo8edcopia.jpg");
+   background-repeat: no-repeat;
+   background-size: 100% auto;
+   }
 
+  footer {          /*cajas del pie*/
+   display: block;
+   margin: 4px;
+   padding: 5px;
+   min-height: 100px;
+   }
+   .logo{
+color:green;
+font-family:StAndrew.tff;
+font-size: 60px;
+  }
+  .table a {
+color:blue;
 }
-#productos-y-servicios1{ /* Aqui mapa de imagenes */
-position:absolute;
-width:9%;
-height:80%;
-margin-top:18.2%;
-margin-left:0%;
-color:white;
-}
-#productos-y-servicios2{ /*Aqui publicidad*/
-position:absolute;
-width:9%;
-height:80%;
-margin-top:18.2%;
-margin-left:54%;
-color:white;
-}
-#pie {
-width:63%;
-height:9%;
-background-color:black;
-margin-top:0%;
-margin-left:18.5%;
-margin-bottom:0px;
-}
-
 #navigation{
-width:50%; 
-height:4%; 
+width:100%; 
+height:10%; 
 margin-top:0%;
 margin-left:0%;
 position:relative;
@@ -177,25 +202,52 @@ top:34%;
   .mi-menu ul li:last-child a {
     border: none;
      }
+     .mainimg{
+  background-repeat: no-repeat;
+   background-size: 100% auto;
+   width: 100%;
+   height: 80%;
+
+}
+
+  /* Too narrow to support three columns */
+  @media all and (max-width: 900px) {
   
-.logo{
-color:green;
-font-family:StAndrew.tff;
-font-size: 60px;
-}
+   #main, #page {
+    -webkit-flex-flow: column;
+            flex-flow: column;
+   }
 
-.logo-img{
-  width:30%;
-  height:30%;
-
-}
-
-
-.table a {
-color:white;
-}
-@media screen and (max-width:900px) {
-  #navigation{
+   #main > article, #main > nav, #main > aside {
+    /* Return them to document order */
+    -webkit-order: 0;
+            order: 0;
+   }
+  
+   #main > nav, #main > aside, header, footer{
+    min-height: 50px;
+    max-height: 50px;
+   }
+ 
+    .mi-menu ul li a{
     display: none;
    } 
+   .mi-menu li:hover > ul li {
+     display: none;
+   }
+   #navigation{
+    -webkit-flex-flow: column;
+    flex-flow: column;
+   }
+     header {        /*cajas de la cabecera*/
+   display: block;
+   margin: 4px;
+   padding: 5px;
+   border-radius: 15px 15px 15px 15px;
+   min-height: 150px;
+   background-size: 0px;
+
+   }
+
+  
   }
