@@ -93,7 +93,8 @@ img{ max-width:100%; height:auto;}
 	display:block;
 	padding:10px;
 	margin:20px 0 0;
-	background-image:url(../fondos/azul-degradados.jpg);
+	/*background-image:url(../fondos/azul-degradados.jpg);*/
+	background-color:blue;
 	color:white;
 	cursor:pointer;
 	text-transform:uppercase;
@@ -117,7 +118,8 @@ img{ max-width:100%; height:auto;}
 	
 }
 .srt-menu li a {
-	background-image:url(../fondos/azul-degradados.jpg);
+	/* background-image:url(../fondos/azul-degradados.jpg); */
+	background-color: blue;
 	display:block;
 	margin:1px 0; 
 	padding:10px;
@@ -126,6 +128,13 @@ img{ max-width:100%; height:auto;}
 .srt-menu li a:hover{
 	background:orange;
 	color:white;
+}
+
+.transition{
+ 	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
+ }
+
 }
 .srt-menu li li a { /* Aqui se cambia el color de fondo del hover */
 	background:orange;
@@ -381,7 +390,8 @@ ul.srt-menu li li li.sfHover ul {
 	text-decoration:none;
 }
 .srt-menu li a {
-	background-image:url(../fondos/azul-degradados.jpg);
+	/*background-image:url(../fondos/azul-degradados.jpg);*/
+	background-color: blue;
 	margin:0; 
 	padding:10px 20px;
 	height:45px;
