@@ -15,8 +15,9 @@ BASE (MOBILE) SIZE
 
 /* typography */
 body{
-	color:#666;
+	background-image: url("../fondos/bg-home.jpg");
 	font-family:'Ubuntu', Arial, Helvetica, sans-serif; 
+	color:white;
 	font-size:1em;
 	line-height:1.4em; 
 	font-weight:normal;
@@ -59,9 +60,6 @@ header{
 	
 #hero,
 #page-header{
-	background-image: url("../coches/fondo.jpg");
-	border-top:1px solid #e2e2e2;
-	border-bottom:1px solid #e2e2e2;
 	padding:20px 0;
 }
 #hero h1{ 
@@ -94,14 +92,14 @@ img{ max-width:100%; height:auto;}
 	padding:10px;
 	margin:20px 0 0;
 	/*background-image:url(../fondos/azul-degradados.jpg);*/
-	background-color:blue;
+	background-color:#2A6EAE;
 	color:white;
 	cursor:pointer;
 	text-transform:uppercase;
 	font-size:20px;
 }
 .menu-toggle.toggled-on{
-	background:orange;
+	background:#F37616;
 }
 .srt-menu{
 	display:none;
@@ -119,14 +117,14 @@ img{ max-width:100%; height:auto;}
 }
 .srt-menu li a {
 	/* background-image:url(../fondos/azul-degradados.jpg); */
-	background-color: blue;
+	background-color: #2A6EAE;
 	display:block;
 	margin:1px 0; 
 	padding:10px;
 	text-decoration:none;
 }
 .srt-menu li a:hover{
-	background:orange;
+	background:#F37616;
 	color:white;
 }
 
@@ -137,7 +135,7 @@ img{ max-width:100%; height:auto;}
 
 }
 .srt-menu li li a { /* Aqui se cambia el color de fondo del hover */
-	background:orange;
+	background:#F37616;
 	padding-left:40px;
 }
 .srt-menu li li li a {
@@ -194,9 +192,7 @@ footer ul{
 }
 
 /*colors and backgrounds*/
-body{
-	background:black;
-}
+
 h1, h2, h3, h4, h5, h6{
 	color:black;
 }
@@ -312,8 +308,8 @@ box-shadow: 0 1px 4px rgba(0,0,0,.2);
 -o-box-shadow: 0 1px 4px rgba(0,0,0,.2);
 }
 .flexslider img{
-width:652px; 
-height:422px;
+width:654px; 
+height:385px;
 }
 
 aside { 
@@ -391,7 +387,7 @@ ul.srt-menu li li li.sfHover ul {
 }
 .srt-menu li a {
 	/*background-image:url(../fondos/azul-degradados.jpg);*/
-	background-color: blue;
+	background-color: #2A6EAE;
 	margin:0; 
 	padding:10px 20px;
 	height:45px;
@@ -417,11 +413,11 @@ ul.srt-menu li li li.sfHover ul {
 .srt-menu li:hover > a,
 .srt-menu li.current a{ 
 	color:white;
-	background:orange;
+	background:#F37616;
 }
 .srt-menu li li:hover > a{
 	color:#fff;
-	background:orange;
+	background:#F37616;
 }
 
 
