@@ -15,7 +15,7 @@ BASE (MOBILE) SIZE
 
 /* typography */
 body{
-	background-image: url("../fondos/bg-home.jpg");
+	background-image: url("../Fondos/bg-home.jpg");
 	font-family:'Ubuntu', Arial, Helvetica, sans-serif; 
 	color:white;
 	font-size:1em;
