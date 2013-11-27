@@ -91,7 +91,6 @@ img{ max-width:100%; height:auto;}
 	display:block;
 	padding:10px;
 	margin:20px 0 0;
-	/*background-image:url(../fondos/azul-degradados.jpg);*/
 	background-color:#2A6EAE;
 	color:white;
 	cursor:pointer;
@@ -116,7 +115,6 @@ img{ max-width:100%; height:auto;}
 	
 }
 .srt-menu li a {
-	/* background-image:url(../fondos/azul-degradados.jpg); */
 	background-color: #2A6EAE;
 	display:block;
 	margin:1px 0; 
@@ -386,7 +384,6 @@ ul.srt-menu li li li.sfHover ul {
 	text-decoration:none;
 }
 .srt-menu li a {
-	/*background-image:url(../fondos/azul-degradados.jpg);*/
 	background-color: #2A6EAE;
 	margin:0; 
 	padding:10px 20px;
