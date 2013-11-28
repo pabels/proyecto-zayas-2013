@@ -1,17 +1,4 @@
-/*
-Simple Responsive Template
 
-
-primary styles 
-   Author: www.prowebdesign.ro
-   Add your own styles to customize the project.
-
-
-
-BASE (MOBILE) SIZE
-	These are the mobile styles. It's what people see on their phones.
-	Remember, keep it light: Speed is Important.
-*/
 
 /* typography */
 body{
@@ -192,7 +179,7 @@ footer ul{
 /*colors and backgrounds*/
 
 h1, h2, h3, h4, h5, h6{
-	color:black;
+	color:white;
 }
 
 footer{ 
