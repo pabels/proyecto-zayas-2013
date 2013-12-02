@@ -33,7 +33,8 @@ a:hover{ text-decoration:none;}
 *{box-sizing:border-box;}
 
   
-/* structure */   
+/* structure */  
+a{ text-decoration:none;} 
 .wrapper{
 	width: 92%; 
 	margin: 0 auto;
@@ -49,10 +50,6 @@ header{
 #page-header{
 	padding:20px 0;
 }
-#hero h1{ 
-	line-height:1.2em;
-	margin-top:0px;
-	margin-bottom:10px;}
 
 .flexslider{
 	display:none;
@@ -164,17 +161,29 @@ img{ max-width:100%; height:auto;}
 .grid_12 {
 	margin-bottom:40px;
 }
+.grid_9 a{
+	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
+}
+
+.grid_9 a:hover{
+	color:orange;
+}
+
+
+.grid_3{
+	background-color:; 
+}
 
 /*FOOTER*/
 footer{  
 	clear:both;
 	font-size:80%;
-	padding:20px 0;
+	background:#111;
+	color:#ccc;
+	margin-bottom:0px;
 }
-footer ul{
-	margin:0;
-	padding:0;
-}
+
 
 /*colors and backgrounds*/
 
@@ -182,19 +191,16 @@ h1, h2, h3, h4, h5, h6{
 	color:white;
 }
 
-footer{ 
-	background:#333;
-	color:#ccc;
-}
-footer h1, footer h2, footer h3, footer h4{ 
-	color:#CCC; 
-	margin-bottom:10px;
-}
+
 footer ul{
 	margin:0 0 0 8%;
 }
 
+#footericons{
+	margin-left:90%;	
+}
 a.buttonlink{ 
+
 	background:#0099ff; 
 	border-radius:7px; 
 	color:#fff;
@@ -452,6 +458,18 @@ ul.srt-menu li li li.sfHover ul {
 
 }
 
+.footermenu{
+	white-space: pre;
+
+
+}
+
+.footerimg{
+	width: 260px;
+	height: 84px;
+	margin-left: 20px;
+	margin-top:1px;
+}
 /*
 DESKTOP
 This is the average viewing window. So Desktops, Laptops, and
