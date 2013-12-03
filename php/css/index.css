@@ -470,6 +470,46 @@ ul.srt-menu li li li.sfHover ul {
 	margin-left: 20px;
 	margin-top:1px;
 }
+
+/*css del taller*/
+.edit{
+	position:absolute;
+	width:600px;
+	height:500px;
+	border-width:3px;
+  	border-style:solid;
+  	margin-left:38%;
+  	margin-top:5%;
+}
+
+.select{
+	width:150px;
+	height: 160px;
+	border-width:2px;
+  	border-style:solid;
+  	position: absolute;
+  	margin-left: 85%;
+  	margin-top: 5%;
+}
+
+.btnup{
+	position: absolute; 
+	margin-left: 88.5%;
+	margin-top: 1%;
+}
+
+.btndown{
+	position: absolute; 
+	margin-left: 88.5%;
+	margin-top: 6%;
+}
+
+.h1taller{
+	font-size: 60px;
+	font-weight: bold;
+}
+
+/*css del taller*/
 /*
 DESKTOP
 This is the average viewing window. So Desktops, Laptops, and
