@@ -197,7 +197,7 @@ footer ul{
 }
 
 #footericons{
-	margin-left:90%;	
+	margin-left:90%;
 }
 a.buttonlink{ 
 
@@ -252,8 +252,23 @@ This is for mobile devices with a bit larger screens.
 	float:right;
 }
 
-} 
+}
 
+@media only screen and (max-width: 647px) {
+
+	.footerimg{
+		display:none;
+	}
+
+}
+
+@media only screen and (max-width: 947px) {
+
+	#footericons{
+		margin-left:85%;
+		display: inline;
+	}
+}
 /*
 TABLET & SMALLER LAPTOPS
 The average viewing window and preferred media query for those is 768px.
@@ -465,10 +480,11 @@ ul.srt-menu li li li.sfHover ul {
 }
 
 .footerimg{
-	width: 260px;
-	height: 84px;
+	width: 170px;
+	height: 130px;
 	margin-left: 20px;
 	margin-top:1px;
+	padding-left: 0px;
 }
 
 /*css del taller*/
