@@ -1,16 +1,27 @@
 <html>
 <head>
+        <title>Taller</title>
 	<link rel="stylesheet" href="css/index.css">
+        <script type="text/javascript" src="js/taller.js"></script>
 </head>
 <!--css desde linea 474-->
-<body>
-<h1 class="h1taller">Taller</h1>
-<div class="edit">
-</div>
-<div class="btnup"><img src="fondos/btn-up.jpg"></div>
-<div class="select"></div><br><br><br><br><br><br><br><br>
-<div class="select"></div><br><br><br><br><br><br><br><br>
-<div class="select"></div><br><br><br><br><br><br><br><br>
-<div class="btndown"><img src="fondos/btn-down.jpg"></div>
+<body onload="init()">
+    <h1 class="h1taller">Taller</h1>
+    <div id="divImgMax"class="edit">
+    </div>
+    <div class="btnup" onclick="bup()"><img src="fondos/btn-up.jpg"></div>
+    <div class="select" onclick="imageMaximize('img1')" align="center">
+        <img id="img1" src="coches/astonmartin.jpg" onclick="redimensionarImagen(this)"/>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <div class="select" onclick="imageMaximize('img2')" align="center">
+        <img id="img2" src="coches/astonmartin.jpg" onclick="redimensionarImagen(this)"/>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <div class="select" onclick="imageMaximize('img3')" align="center">
+        <img id="img3" src="coches/astonmartin.jpg" onclick="redimensionarImagen(this)"/>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <div class="btndown" onclick="bdown()"><img src="fondos/btn-down.jpg"></div>
 </body>
 </html>
