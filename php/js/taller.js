@@ -9,7 +9,7 @@ carList[6] = "coches/chrysler300.jpg";
 carList[7] = "coches/citroen.jpg";
 carList[8] = "coches/delorean.jpg";
 
-var pos=0;
+var pos = 0;
 
 
 function bup(){
@@ -23,7 +23,7 @@ function bdown(){
 }
 
 function init(){
-    pos=0;
+    pos = 0;
     loadImgs();
     imageMaximize("img1");
 }
@@ -32,31 +32,31 @@ function loadImgs(){
     loadImg("img1",pos);
     loadImg("img2",pos+1);
     loadImg("img3",pos+2);
-    if (pos>=carList.length){
-        pos=pos-carList.length;
+    if (pos >= carList.length){
+        pos = pos-carList.length;
     }
-    if (pos<0){
-        pos=pos+carList.length;
+    if (pos < 0){
+        pos = pos+carList.length;
     }
 }
 
 function loadImg(id,pos){
     posReal = pos;
-    if (pos>=carList.length){
-        posReal=pos-carList.length;
+    if (pos >= carList.length){
+        posReal = pos-carList.length;
     }
-    if (pos<0){
-        posReal=pos+carList.length;
+    if (pos < 0){
+        posReal = pos+carList.length;
     }
-    document.getElementById(id).src=carList[posReal];
+    document.getElementById(id).src = carList[posReal];
 }
 
 function imageMaximize(imageId){
     image = document.getElementById(imageId);
     editBox = document.getElementById("divImgMax");
-    editBox.innerHTML="";
-    var imageElement=document.createElement("img");
-    imageElement.src=image.src;
+    editBox.innerHTML = "";
+    var imageElement = document.createElement("img");
+    imageElement.src = image.src;
     editBox.appendChild(imageElement);
 }
 
