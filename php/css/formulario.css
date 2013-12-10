@@ -1,5 +1,4 @@
-
-
+/*#form{position:absolute;top:250px;left:100px;}
 /* typography */
 body{
 	background-image: url("../Fondos/bg-home.jpg");
@@ -485,27 +484,34 @@ ul.srt-menu li li li.sfHover ul {
 	margin-left: 20px;
 	margin-top:1px;
 	padding-left: 0px;
+	bottom: 0%;
+}
+.footer2{
+	position:absolute;
+	bottom:0%;
+	width:100%;
+	height:15%;
+	right: 0%;
+	left: 0%;
 }
 
 /*css del taller*/
 .edit{
-	position: absolute;
-	max-width:42%;
-	max-height:48%;
+	position:absolute;
+	width:600px;
+	height:500px;
 	border-width:3px;
   	border-style:solid;
   	margin-left:30%;
   	margin-top:5%;
-  	overflow:hidden;
 }
 
 .select{
-	position:absolute;
-	width:246px;
-	max-height: 156px;
+	width:250px;
+	height: 160px;
 	border-width:2px;
   	border-style:solid;
-  	overflow: hidden;
+  	position: absolute;
   	margin-left: 77%;
   	margin-top: 5%;
 }
@@ -513,7 +519,6 @@ ul.srt-menu li li li.sfHover ul {
 .select img{
     max-width: 100%;
     max-height: 100%;
-    overflow: hidden;
 }
 
 .btnup{
@@ -524,7 +529,7 @@ ul.srt-menu li li li.sfHover ul {
 
 .btndown{
 	position: absolute; 
-	margin-left: 85%;
+	margin-left: 88.5%;
 	margin-top: 6%;
 }
 
@@ -533,24 +538,6 @@ ul.srt-menu li li li.sfHover ul {
 	font-weight: bold;
 }
 
-#toolbar{
-	position:absolute;
-	width:450px;
-	height:70px;
-  	margin-left:30%;
-  	margin-top:28%;
-  	white-space: pre;
-
-}
-
-#toolbar img{
-
-	width:40px;
-	height: 60px;
-}
-#divImgMax img{
-	
-}
 /*css del taller*/
 /*
 DESKTOP

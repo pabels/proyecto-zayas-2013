@@ -4,28 +4,25 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-<title>Paint it Black</title>
-<meta name="keywords" content="">
-<!-- Mobile viewport -->
-<meta name="viewport" content="width=device-width; initial-scale=1.0">
-  <!-- Insertar logo Icono aqui -->
-<!-- CSS-->
-<!-- Google web fonts. You can get your own bundle at http://www.google.com/fonts. Don't forget to update the CSS accordingly!-->
-<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Ubuntu' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="js/flexslider/flexslider.css" />
-<link rel="stylesheet" href="css/index.css">
-<!-- end CSS-->
-<!-- JS-->
-<script src="js/libs/modernizr-2.6.2.min.js"></script>
-<!-- end JS-->
+    <title>Paint it Black</title>
+    <meta name="keywords" content="">
+    <!-- Mobile viewport -->
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <!-- Insertar logo Icono aqui -->
+    <!-- CSS-->
+    <!-- Google web fonts. You can get your own bundle at http://www.google.com/fonts. Don't forget to update the CSS accordingly!-->
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif|Ubuntu' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="js/flexslider/flexslider.css" />
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/taller.js"></script>
+    <script src="js/libs/modernizr-2.6.2.min.js"></script>
 </head>
 
 <body id="home">
-<!-- header area -->
     <header class="wrapper clearfix">
 		      
         
@@ -33,17 +30,16 @@
         <nav id="topnav" role="navigation">
         <div class="menu-toggle">Menu</div>  
         <ul class="srt-menu" id="menu-main-navigation">
-            <li class="current transition"><a href="#">Inicio</a></li>
+            <li class="current transition"><a href="index.html">Inicio</a></li>
             <li><a class="transition" href="#">Tienda</a></li>
-			<li><a class="transition" href="#">Taller</a></li>
+			<li><a class="transition" href="taller.html">Taller</a></li>
 			<li><a class="transition" href="#">Foro</a></li>
-			<li><a class="transition" href="#">Registro</a></li>
+			<li><a class="transition" href="formulario.html">Registro</a></li>
 		</ul>     
 		</nav>
 		<!-- end main navigation -->
   
     </header>
-<!-- end header -->
 <!-- hero area (the grey one with a slider -->
     <section id="hero" class="clearfix">    
     <!-- responsive FlexSlider image slideshow -->
@@ -52,7 +48,8 @@
                 <!--Aqui va la imagen del logo -->
         </div>
         <div class="grid_7 omega rightfloat">
-                <div class="flexslider">
+
+                <div id="flexslider" class="flexslider">
                     <ul class="slides">
                         <li>
                             <img src="coches/astonmartin.jpg">
@@ -121,7 +118,6 @@
 	</section><!-- #end content area -->   
       
       
-    <!-- columns demo, delete it!-->
     <section id="columnsdemo" style="margin-bottom:60px; width:100%" class="clearfix">
         <h2 style="width:100%; clear:both">Paint it black! ®</h2>
         <div class="grid_3">
@@ -132,7 +128,7 @@
 			<p class="direccion">Fax: 91 455 89 775<p>
 		</div>
         <div class="grid_9">
-			<center><p class="footermenu"><a href="#">Inicio</a>      <a href="#">Tienda</a>       <a href="#">Taller</a>       <a href="#">Foro</a>     <a href="#">Registro</a></p></center>
+			<center><p class="footermenu"><a href="#">Inicio</a>      <a href="#">Tienda</a>       <a href="taller.html">Taller</a>       <a href="#">Foro</a>     <a href="formulario.html">Registro</a></p></center>
 			<img src="coches/laser.png" height="3px"><br>
 			<center>
 
@@ -141,21 +137,19 @@
             <img class="footerimg" src="iconos/logoforo.png">
 
 		</div>
-    </section>
-    <!-- end columns demo -->  
+    </section>  
     
       
   </div><!-- #end div #main .wrapper -->
 
-
-<!-- footer area -->    
+ 
 <footer>
 	<div id="colophon" class="wrapper clearfix">
     	Copyright Paint it black 2013 © All Rights Reserved.
     </div>
 	<!--You can NOT remove this attribution statement from any page, unless you get the permission from prowebdesign.ro--><div id="attribution" class="wrapper clearfix" style="color:#666; font-size:11px;">Web site by Hector Aguado, Jorge Gonzalez, Pablo Andres-Gayon.
 
-    </div><!--end attribution-->
+    </div>
     
 	<div id="footericons">
  		<img src="iconos/ico-fb.png">
