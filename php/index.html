@@ -35,7 +35,6 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Sobre nosotros</a></li>
-            <li><a href="#">Servicios</a></li>
             <li><a href="contact.html">Contacta</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Galeria <b class="caret"></b></a>
@@ -47,9 +46,8 @@
             <li class="dropdown">
               <a href="#">Foro</a>
             </li>
-            <li><a href="registro.html">Registro</a>
-              </ul>
-            </li>
+            <li><a href="registro.php">Registro</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#myModal">LogIn</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container -->
@@ -72,7 +70,7 @@
             </div>
           </div>
           <div class="item">
-            <div class="fill" style="background-image:url('coches/audir81.jpg')"></div>
+            <div class="fill" style="background-image:url('coches/audi1.jpg')"></div>
             <div class="carousel-caption">
               <h1>Audi</h1>
             </div>
@@ -123,23 +121,23 @@
             <h2>Galeria de la semana.</h2>
             <hr>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <a href="portfolio-item-aston.html"><img class="img-responsive img-home-portfolio" src="coches/astonmartin1.jpg"></a><p>Aston martin DB9</p>
+          <div id="indeximage0" class="col-lg-4 col-md-4 col-sm-6">
+            <a href="portfolio-item-aston.html"><img id="indeximg0" class="img-responsive img-home-portfolio" src="coches/astonmartin1.jpg"></a><p>Aston martin DB9</p>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <a href="portfolio-item-audi.html"><img class="img-responsive img-home-portfolio" src="coches/audir81.jpg"></a><p>Audi R8</p>
+          <div id="indeximage1" class="col-lg-4 col-md-4 col-sm-6">
+            <a href="portfolio-item-audi.html"><img id="indeximg1" class="img-responsive img-home-portfolio" src="coches/audir81.jpg"></a><p>Audi R8</p>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <a href="portfolio-item-bugatti.html"><img class="img-responsive img-home-portfolio" src="coches/bugatti1.jpg"></a><p>Bugatti Veyron</p>
+          <div id="indeximage2" class="col-lg-4 col-md-4 col-sm-6">
+            <a href="portfolio-item-bugatti.html"><img id="indeximg2" class="img-responsive img-home-portfolio" src="coches/bugatti1.jpg"></a><p>Bugatti Veyron</p>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <a href="portfolio-item-hummer.html"><img class="img-responsive img-home-portfolio" src="coches/hummer1.jpg"></a><p>Hummer H2</p>
+          <div id="indeximage3" class="col-lg-4 col-md-4 col-sm-6">
+            <a href="portfolio-item-hummer.html"><img id="indeximg3" class="img-responsive img-home-portfolio" src="coches/hummer1.jpg"></a><p>Hummer H2</p>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <a href="portfolio-item-delorean.html"><img class="img-responsive img-home-portfolio" src="coches/delorean1.jpg"></a><p>DMC Delorean</p>
+          <div id="indeximage4" class="col-lg-4 col-md-4 col-sm-6">
+            <a href="portfolio-item-delorean.html"><img id="indeximg4" class="img-responsive img-home-portfolio" src="coches/delorean1.jpg"></a><p>DMC Delorean</p>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <a href="portfolio-item-dodge.html"><img class="img-responsive img-home-portfolio" src="coches/challenger1.jpg"></a><p>Dodge Challanger</p>
+          <div id="indeximage5" class="col-lg-4 col-md-4 col-sm-6">
+            <a href="portfolio-item-dodge.html"><img id="indeximg5" class="img-responsive img-home-portfolio" src="coches/challenger1.jpg"></a><p>Dodge Challenger</p>
           </div>
         </div><!-- /.row -->
 
@@ -180,7 +178,7 @@
 
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-6">
-            <img class="img-responsive" src="coches/audir87.jpg">
+            <img class="img-responsive" src="coches/audi7.jpg">
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6">
             <h2>Nuevo interior del Audi R8</h2>
@@ -230,11 +228,29 @@
       </footer>
 
     </div><!-- /.container -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Paint it Black!</h4>
+      </div>
+      <div class="modal-body">
+       Nombre de usuario <input type="text" name="userName"> Contraseña <input type="password" name="userPassword">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Entrar</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
     <!-- JavaScript -->
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/modern-business.js"></script>
+    <script src="js/init.js"></script>
 
   </body>
 </html>
