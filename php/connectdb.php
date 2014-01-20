@@ -2,9 +2,9 @@
 
     function enviar($nombre,$password,$email){
 
-        define("Servidor","localhost");
-        define("User","root");
-        define("Pass","");
+        define("Servidor","127.0.0.1:3307");
+        define("User","admintjegPEX");
+        define("Pass","uZr93IWebeVY");
         $conexion=mysql_connect(Servidor,User,Pass) or die ("Error, algo no ha ido bien");
         mysql_select_db("black",$conexion);
         $query="insert into user values("."'".$nombre."', "."'".$password."', "."'".$email."',0)";
