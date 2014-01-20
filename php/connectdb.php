@@ -2,7 +2,7 @@
 
     function enviar($nombre,$password,$email){
 
-        define("Servidor","127.0.0.1:3307");
+        define("Servidor","127.11.174.130:3306");
         define("User","admintjegPEX");
         define("Pass","uZr93IWebeVY");
         $conexion=mysql_connect(Servidor,User,Pass) or die ("Error, algo no ha ido bien");
