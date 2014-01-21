@@ -30,7 +30,7 @@
         if(is_email($email)){
         enviar($nombre,$password,$email);
         
-        http_redirect("index.html");
+        http_redirect("http://test-paintitblack.rhcloud.com/");
         alert("Se ha registrado satisfactoriamente");
         }
         else{ 
