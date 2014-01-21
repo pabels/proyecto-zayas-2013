@@ -29,8 +29,9 @@
 
         if(is_email($email)){
         enviar($nombre,$password,$email);
-        echo 'Se ha registrado correctamente'.'<br>';
-        echo "<a href=index.html>Volver</a>";
+        
+        http_redirect("index.html");
+        alert("Se ha registrado satisfactoriamente");
         }
         else{ 
             echo 'Escribe un correo valido.<br><a href=registro.php>Volver</a>';
