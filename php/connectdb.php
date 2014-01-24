@@ -29,15 +29,14 @@
 
         if(is_email($email)){
         enviar($nombre,$password,$email);
-        header('Refresh: 3; registro.html');
-        echo 'Se ha registrado correctamente.';
+        header('Refresh: 3; ../cliente/registro.html');
         }
         else{ 
-            echo 'Escribe un correo valido.<br><a href=registro.php>Volver</a>';
+            echo 'Escribe un correo valido.<br><a href=../cliente/registro.html>Volver</a>';
         } 
     }
     else{
-        echo 'Rellena todos los campos con * <br><a href=registro.php>Volver</a>';
+        echo 'Rellena todos los campos con * <br><a href=../cliente/registro.html>Volver</a>';
     }
 
 ?>

@@ -1,8 +1,8 @@
 <?php
 
-require "../lib/PHPMailerAutoload.php";
-include("../lib/class.phpmailer.php");
-include("../lib/class.smtp.php");
+require "./lib/PHPMailerAutoload.php";
+include("./lib/class.phpmailer.php");
+include("./lib/class.smtp.php");
 
 function send_mail($mail_register, $cuerpo) {
     $mail = new PHPMailer();
@@ -33,11 +33,34 @@ function send_mail($mail_register, $cuerpo) {
     }
     return true;
 }
-$mail_register=$_POST['email'];
-$cuerpo="Mensaje del usuario: <b>$_POST[name]</b> con email: $_POST[email].".$_POST['message'];
-if(send_mail($mail_register,$cuerpo)){
-    header('Refresh: 3; contact.html');
-    echo 'Se ha enviado el mensaje correctamente';
-}
+
+function is_email($cadena){
+        if (preg_match('/^[A-Za-z0-9-_.+%]+@[A-Za-z0-9-.]+\.[A-Za-z]{2,4}$/', $cadena)) {
+        return true;
+        } else {
+        return false;
+        }
+    }
+
+    
+
+
+if(isset($_POST['name']) && $_POST['name']!="" && isset($_POST['email']) && isset($_POST['message']) && $_POST['message']!=""){
+
+        $email=$_POST['email'];
+        $cuerpo="Mensaje del usuario: <b>$_POST[name]</b> con email: $_POST[email]."."<br>".$_POST['message'];
+
+        if(is_email($email)){
+        send_mail($email,$cuerpo);
+        header('Refresh: 3; ../cliente/contact.html');
+        echo 'Se ha enviado el mensaje correctamente.';
+        }
+        else{ 
+            echo 'Escribe un correo valido.<br><a href=../cliente/contact.html>Volver</a>';
+        } 
+    }
+    else{
+        echo 'Rellena todos los campos con * <br><a href=../cliente/contact.html>Volver</a>';
+    }
 
 ?>
