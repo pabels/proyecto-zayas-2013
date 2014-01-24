@@ -36,8 +36,8 @@ function send_mail($mail_register, $cuerpo) {
 $mail_register=$_POST['email'];
 $cuerpo="Mensaje del usuario: <b>$_POST[name]</b> con email: $_POST[email].".$_POST['message'];
 if(send_mail($mail_register,$cuerpo)){
-    echo "Se ha enviado correctamente";
-    echo "<a href=index.html>Volver</a>";
+    header('Refresh: 3; contact.html');
+    echo 'Se ha enviado el mensaje correctamente';
 }
 
 ?>
