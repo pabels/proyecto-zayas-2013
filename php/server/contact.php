@@ -45,7 +45,7 @@ function is_email($cadena){
     
 
 
-if(isset($_POST['name']) && $_POST['name']!="" && isset($_POST['email']) && isset($_POST['message']) && $_POST['message']!=""){
+if(isset($_POST['name']) && $_POST['name']!="" && isset($_POST['email']) && $_POST['email']!=""  && isset($_POST['message']) && $_POST['message']!=""){
 
         $email=$_POST['email'];
         $cuerpo="Mensaje del usuario: <b>$_POST[name]</b> con email: $_POST[email]."."<br>".$_POST['message'];
@@ -61,5 +61,4 @@ if(isset($_POST['name']) && $_POST['name']!="" && isset($_POST['email']) && isse
     else{
         echo 'Rellena todos los campos con * <br><a href=../client/contact.html>Volver</a>';
     }
-
 ?>
