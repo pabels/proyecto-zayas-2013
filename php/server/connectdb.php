@@ -29,14 +29,14 @@
 
         if(is_email($email)){
         enviar($nombre,$password,$email);
-        header('Refresh: 3; ../cliente/registro.html');
+        header('Refresh: 3; ../client/registro.html');
         }
         else{ 
-            echo 'Escribe un correo valido.<br><a href=../cliente/registro.html>Volver</a>';
+            echo 'Escribe un correo valido.<br><a href=../client/registro.html>Volver</a>';
         } 
     }
     else{
-        echo 'Rellena todos los campos con * <br><a href=../cliente/registro.html>Volver</a>';
+        echo 'Rellena todos los campos con * <br><a href=../client/registro.html>Volver</a>';
     }
 
 ?>

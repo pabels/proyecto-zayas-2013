@@ -52,15 +52,15 @@ if(isset($_POST['name']) && $_POST['name']!="" && isset($_POST['email']) && isse
 
         if(is_email($email)){
         send_mail($email,$cuerpo);
-        header('Refresh: 3; ../cliente/contact.html');
+        header('Refresh: 3; ../client/contact.html');
         echo 'Se ha enviado el mensaje correctamente.';
         }
         else{ 
-            echo 'Escribe un correo valido.<br><a href=../cliente/contact.html>Volver</a>';
+            echo 'Escribe un correo valido.<br><a href=../client/contact.html>Volver</a>';
         } 
     }
     else{
-        echo 'Rellena todos los campos con * <br><a href=../cliente/contact.html>Volver</a>';
+        echo 'Rellena todos los campos con * <br><a href=../client/contact.html>Volver</a>';
     }
 
 ?>
