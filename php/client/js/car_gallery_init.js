@@ -72,6 +72,11 @@ function load() {
     	var z=document.getElementById("indeximage"+i).getElementsByTagName("a");
     	z[0].href="portfolio-"+carList[i+t].substring(7,carList[i+t].length-5)+".html";
 	}
+	var w=document.getElementById("pagination").getElementsByTagName("li");
+	console.log(w[1]);
+    w[t/12+1].className="active";
+    w[t/12].className="";
+    w[t/12+2].className="";
 }
 
 function next(){
@@ -83,3 +88,4 @@ function before(){
 	t-=12;
 	load();
 }
+
