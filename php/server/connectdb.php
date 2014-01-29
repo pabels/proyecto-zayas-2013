@@ -21,7 +21,7 @@
         }
     }
 
-    if(isset($_POST['nombre']) && $_POST['nombre']!="" && isset($_POST['password']) && $_POST['password']!="" && isset($_POST['email']) && $_POST['email']!=""){
+    if(isset($_POST['nombre']) && $_POST['nombre']!="" && isset($_POST['password']) && $_POST['password']!="" && isset($_POST['email'])){
 
         $nombre=$_POST['nombre'];
         $password=$_POST['password'];
@@ -30,6 +30,7 @@
         if(is_email($email)){
         enviar($nombre,$password,$email);
         header('Refresh: 3; ../client/registro.html');
+        echo 'Se ha registrado correctamente';
         }
         else{ 
             echo 'Escribe un correo valido.<br><a href=../client/registro.html>Volver</a>';

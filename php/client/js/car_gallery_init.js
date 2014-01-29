@@ -1,4 +1,3 @@
-
 var carList = new Array();
 carList[0] = "coches/astonmartin1.jpg";
 carList[1] = "coches/astonmartin2.jpg";
@@ -65,35 +64,22 @@ carList[61] = "coches/mustang5.jpg";
 carList[62] = "coches/mustang6.jpg";
 carList[63] = "coches/mustang7.jpg";
 
-var i=0;
-var j=0;
-var random = new Array();
-while(i<=5){
-	random.push(Math.floor(Math.random() * (carList.length)));
-	i++;
-}
-x=Math.floor(Math.random() * (carList.length));
-
-
-	while(j<10){
-		if(random[j]==random[j+1] || random[j]==random[j+2] || random[j]==random[j+3]|| random[j]==random[j+4]|| random[j]==random[j+5]){
-			random[j]=Math.floor(Math.random() * (carList.length));
-		}else{
-			j++;
-		}
-
+var t=0;
+load();
+function load() {
+	for(var i=0;i<12;i++){
+    	document.getElementById("gallery"+i).src=carList[i+t];
+    	var z=document.getElementById("indeximage"+i).getElementsByTagName("a");
+    	z[0].href="portfolio-"+carList[i+t].substring(7,carList[i+t].length-5)+".html";
 	}
+}
 
+function next(){
+	t+=12;
+	load();
+}
 
-
-
-t=0;
-for(var i=0;i<6;i++){
-	x=random[t];
-    document.getElementById("indeximg"+i).src=carList[x];
-    var z=document.getElementById("indeximage"+i).getElementsByTagName("p");
-    z[0].innerHTML=carList[x].substring(7,carList[x].length-5);
-    z=document.getElementById("indeximage"+i).getElementsByTagName("a");
-    z[0].href="portfolio-"+carList[x].substring(7,carList[x].length-5)+".html";
-    t++;
+function before(){
+	t-=12;
+	load();
 }
