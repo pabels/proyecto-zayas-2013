@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -71,10 +72,26 @@
 
       <div class="row">
       
-        <div class="col-lg-12">
-          <img class="img-responsive" src="http://placehold.it/1100x300">
+        <div class="col-lg-10">
+          <img class="workshop_img" id="imagetoedit" src="coches/astonmartin1.jpg">
         </div>
-
+          <div class="well">
+            <h4>Marcas populares</h4>
+              <div class="row">
+                <div class="col-lg-1">
+                  <ul class="list-unstyled" id="carSelect">
+                    <li><a id="0" href="#">Aston Martin</a></li>
+                    <li><a id="1" href="#">Audi</a></li>
+                    <li><a id="2" href="#">Jeep</a></li>
+                    <li><a id="3" href="#">Mustang</a></li>
+                    <li><a id="4" href="#">Morgan</a></li>
+                    <li><a id="5" href="#">Hummer</a></li>
+                    <li><a id="6" href="#">Bugatti</a></li>
+                    <li><a id="7" href="#">Delorean</a></li>
+                  </ul>
+                </div>
+              </div>
+          </div><!-- /well -->
       </div><!-- /.row -->
 
       <!-- Service Paragraphs -->
@@ -97,23 +114,23 @@
           <div id="myTabContent" class="tab-content">
             <div class="tab-pane fade in active" id="service-one">
               <i class="fa fa-gear pull-left fa-4x"></i>
-              <p><img class="img-responsive" src="http://placehold.it/120x100"></p>
+              <p><button><img class="workshop_choose_img" src="coches/bumper1.jpg"></button><button><img class="workshop_choose_img" src="coches/bumper2.jpg"></button><button><img class="workshop_choose_img" src="coches/bumper3.jpg"></button></p>
             </div>
             <div class="tab-pane fade" id="service-two">
               <i class="fa fa-flag pull-left fa-4x"></i>
-              <p><img class="img-responsive" src="http://placehold.it/120x100"></p>
+              <p><button><img class="workshop_choose_img" src="coches/hood1.jpg"></button><button><img class="workshop_choose_img" src="coches/hood2.jpg"></button><button><img class="workshop_choose_img" src="coches/hood3.jpg"></button></p>
             </div>
             <div class="tab-pane fade" id="service-three">
               <i class="fa fa-magic pull-left fa-4x"></i>
-              <p><img class="img-responsive" src="http://placehold.it/120x100"></p>
+              <p><button><img class="workshop_choose_img" src="coches/bodywork1.jpg"></button><button><img class="workshop_choose_img" src="coches/bodywork2.jpg"></button><button><img class="workshop_choose_img" src="coches/bodywork3.jpg"></button></p>
             </div>
             <div class="tab-pane fade" id="service-four">
               <i class="fa fa-gears pull-left fa-4x"></i>
-              <p><img class="img-responsive" src="http://placehold.it/120x100"></p>
+              <p><button><img class="workshop_choose_img" src="coches/wheels1.jpg"></button><button><img class="workshop_choose_img" src="coches/wheels2.jpg"></button><button><img class="workshop_choose_img" src="coches/wheels3.jpg"></button></p>
             </div>
             <div class="tab-pane fade" id="service-five">
               <i class="fa fa-flask pull-left fa-4x"></i>
-              <p><img class="img-responsive" src="http://placehold.it/120x100"></p>
+              <p><button><img class="workshop_choose_img" src="coches/other1.jpg"></button><button><img class="workshop_choose_img" src="coches/other2.jpg"></button><button><img class="workshop_choose_img" src="coches/other3.jpg"></button></p>
             </div>
           </div>
         </div>
@@ -188,6 +205,8 @@
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/modern-business.js"></script>
+    <script src="js/workshop_init.js"></script>
+
 
   </body>
 </html>
