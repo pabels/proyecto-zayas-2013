@@ -22,19 +22,19 @@ define("Servidor","localhost");
     $query="insert into coches values('astonmartin7',0)";
     mysql_query($query,$conexion);
 
-	$query="insert into coches values('audir81',0)";
+	$query="insert into coches values('audi1',0)";
     mysql_query($query,$conexion);
-    $query="insert into coches values('audir82',0)";
+    $query="insert into coches values('audi2',0)";
     mysql_query($query,$conexion);
-    $query="insert into coches values('audir83',0)";
+    $query="insert into coches values('audi3',0)";
     mysql_query($query,$conexion);
-    $query="insert into coches values('audir84',0)";
+    $query="insert into coches values('audi4',0)";
     mysql_query($query,$conexion);
-    $query="insert into coches values('audir85',0)";
+    $query="insert into coches values('audi5',0)";
     mysql_query($query,$conexion);
-    $query="insert into coches values('audir86',0)";
+    $query="insert into coches values('audi6',0)";
     mysql_query($query,$conexion);
-    $query="insert into coches values('audir87',0)";
+    $query="insert into coches values('audi7',0)";
     mysql_query($query,$conexion);
 
     $query="insert into coches values('bugatti1',0)";
