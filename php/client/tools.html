@@ -19,7 +19,7 @@
   <body>
 
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
+      <div class="container" id="navbarmenu">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -27,45 +27,30 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+          
           <a class="navbar-brand" href="index.html">Paint it Black!</a>
         </div>
 
+        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.php">Contact</a></li>
+            <li><a href="#">Herramientas</a></li>
+            <li><a href="contact.html">Contacta</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Galeria <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="portfolio-1-col.html">1 Column Portfolio</a></li>
-                <li><a href="portfolio-2-col.html">2 Column Portfolio</a></li>
-                <li><a href="portfolio-3-col.html">3 Column Portfolio</a></li>
-                <li><a href="portfolio-4-col.html">4 Column Portfolio</a></li>
-                <li><a href="portfolio-item.html">Single Portfolio Item</a></li>
+                <li><a href="proyects.html">Proyectos</a></li>
+                <li><a href="car_gallery.html">Galeria de Coches</a></li>
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li class="active"><a href="blog-home-1.html">Blog Home 1</a></li>
-                <li><a href="blog-home-2.html">Blog Home 2</a></li>
-                <li><a href="blog-post.html">Blog Post</a></li>
-              </ul>
+              <a href="#">Foro</a>
             </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="full-width.html">Full Width Page</a></li>
-                <li><a href="sidebar.html">Sidebar Page</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="404.html">404</a></li>
-                <li><a href="pricing.html">Pricing Table</a></li>
-              </ul>
-            </li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#myModal">LogIn</a></li>
           </ul>
-        </div>
-      </div>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
     </nav>
 
     <div class="container">
@@ -90,11 +75,13 @@
           <p class="lead">formato: <a href="#">JPEG, GIF.</a></p>
           <hr>
           <hr>
-          <img src="http://placehold.it/900x300" class="img-responsive">
+          <img src="http://placehold.it/900x300" class="img-responsive" id="image" onchange="handleFiles();">
           <hr>
           <p>Puedes subir mas imagenes y ayudarnos a aumentar nuestra coleccion de coches; acuerdate de que esten en formato adecuado: jpeg o gif.</p>
-          <a class="btn btn-primary" href="#">Subir imagen <i class="fa fa-angle-right"></i></a>
-
+          <form enctype="multipart/form-data" action="../server/upload.php" method="POST">
+          <input type="hidden" name="MAX_FILE_SIZE" value="20000000">
+          <input name="uploadedfile" type="file" id="input">
+          <input type=submit class="btn btn-primary" value="Subir Imagen >" name="imagen">
           <hr>
 
           <h1><a href="#">Añadir proyecto</a></h1>
@@ -104,8 +91,8 @@
           <img src="http://placehold.it/900x300" class="img-responsive">
           <hr>
           <p>Sube tu proyecto y compartelo con todos!.</p>
-          <a class="btn btn-primary" href="#">Añadir proyecto <i class="fa fa-angle-right"></i></a>
-
+          <input type=submit class="btn btn-primary" value="Subir Proyecto >" name="proyecto">
+          </form>
           <hr>
           <hr>
 
@@ -132,7 +119,23 @@
         </div>
       </footer>
     </div>
-
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Paint it Black!</h4>
+      </div>
+      <div class="modal-body">
+       Nombre de usuario: <input type="text" name="userName"> Contraseña: <input type="password" name="userPassword">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Entrar</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
     <!-- JavaScript -->
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
